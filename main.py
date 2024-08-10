@@ -82,8 +82,8 @@ class device:
         """
         try:
             cred = credential.Credential(
-                "AKIDPjGi8Pql4Rl1Ng4Rm2mkctBpLl5JPQSf",
-                "PxcAWlv4ESZhoqARaiibPAqZP9nKl6O3",
+                "YOURID",
+                "YOURSECRET",
             )
             httpProfile = HttpProfile()
             httpProfile.endpoint = "tmt.tencentcloudapi.com"
@@ -118,9 +118,9 @@ class device:
         there will be no output here
         """
         str_to_mp3(
-            appid="70b791ee",
-            api_secret="M2M1ZTdhN2RlNTI5NTk2Y2RhOTNjNTMw",
-            api_key="9ca4a8e057795e6a4d2a1a670915228e",
+            appid="YOURAPPID",
+            api_secret="YOURAPISECRET",
+            api_key="YOURAPIKEY",
             url="wss://cbm01.cn-huabei-1.xf-yun.com/v1/private/medd90fec",
             # 待合成文本
             text=input_text,
@@ -182,4 +182,4 @@ if __name__ == "__main__":
     # # 基于智能分词系统，将中文文本分词后转换成特殊风格的拼音，并插入空格，便于之后的盲文打印
     # test_text = "很高兴认识你"
     # print(myDev.text_to_pinyin(test_text))
-    print(myDev.text_to_array("哭泣是吧"))
+    print(myDev.text_to_array("哭泣天使"))
